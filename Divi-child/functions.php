@@ -62,12 +62,12 @@ function qwerty_custom_rewrite_basic() {
  * @return array  $caps    The user's capabilities, with 'unfiltered_html' potentially added.
  */
 
-function multisite_restore_unfiltered_html( $caps, $cap, $user_id, ...$args ) {
-	if ( 'unfiltered_html' === $cap && ( user_can( $user_id, 'mloustaunau' ) || user_can( $user_id, 'jvalencia') || user_can( $user_id, 'jesse' ) || user_can( $user_id, 'parkvistamarketing2020' ) || user_can( $user_id, 'stoneridgecreekmarketing' ) || user_can( $user_id, 'universityvillagemarketing' ) || user_can( $user_id, 'lacostaglenmarketing2020' ) || user_can( $user_id, 'msretirementmarketing' ) ) ) {
-		$caps = array( 'unfiltered_html' );
-	}
+// function multisite_restore_unfiltered_html( $caps, $cap, $user_id, ...$args ) {
+// 	if ( 'unfiltered_html' === $cap && ( user_can( $user_id, 'mloustaunau' ) || user_can( $user_id, 'jvalencia') ) ) {
+// 		$caps = array( 'unfiltered_html' );
+// 	}
 
-	return $caps;
-}
+// 	return $caps;
+// }
 
-add_filter( 'map_meta_cap', 'multisite_restore_unfiltered_html', 1, 4 );
+// add_filter( 'map_meta_cap', 'multisite_restore_unfiltered_html', 1, 4 );
